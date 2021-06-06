@@ -29,6 +29,30 @@ body {
   box-sizing: inherit;
 }
 
+
+.title {
+  font-family: var(--accent-font);
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 58px;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -78,15 +102,17 @@ p {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 700px;
-    padding-right: 34px;
-    padding-left: 34px;
+    max-width: 768px;
+    padding-right: 35px;
+    padding-left: 35px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1047px;
+    max-width: 1200px;
+    padding-right: 75px;
+    padding-left: 75px;
   }
 }
 
@@ -221,6 +247,6 @@ img {
   font-size: 16px;
   line-height: 1.76;
   letter-spacing: 0.02;
-  color: black;
+  color: var(--first-text-color);
 }
 /*# sourceMappingURL=main.css.map */
