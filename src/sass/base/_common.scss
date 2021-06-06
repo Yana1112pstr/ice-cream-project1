@@ -1,11 +1,31 @@
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-	box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.title {
+  font-family: var(--accent-font);
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--title-color);
+
+  @media screen and (max-width: 768px) {
+    font-size: 48px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    font-size: 58px;
+  }
 }
 
 h1,
@@ -15,28 +35,28 @@ h4,
 h5,
 h6,
 p {
-	margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .link {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .list {
-    list-style: none;
-    padding-left: 0;
-	margin: 0;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
