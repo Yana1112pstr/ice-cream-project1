@@ -22,6 +22,9 @@
   font-family: var(--accent-font);
   font-size: 34px;
   line-height: 1.14;
+  @media screen and( min-width: 768px) {
+ margin-bottom: 50px;
+    }
 }
 .about__items {
    @media screen and( min-width: 480px) {}
@@ -50,6 +53,23 @@
    
 }
 .about__img {
+    @media screen and( min-width: 480px) {
+        width: 280px;
+height: 279px;
+    }
+
+    @media screen and( min-width: 768px) {
+    width: 340px;
+height: 339px;
+    }
+    @media screen and( min-width: 1200px) {
+       width: 516px;
+         height: 516px;
+
+       
+    }
+
+
 //    width: 516px;
 // height: 516px;
 }
@@ -116,6 +136,17 @@ border: none;
 background: #FFFFFF;
 border-radius: 22px;
 margin-bottom: 39px;
+
+
+// &::after{
+//    content: "";
+//     background-image: url(../../image/svg/vector1.svg);
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     display: inline-block;
+//     margin-left: 10px;
+ 
+// }
 }
 .about__button-svg {
 }
