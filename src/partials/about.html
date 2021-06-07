@@ -4,7 +4,16 @@
       <h2 class="about__title">how it’s made?</h2>
       <div class="about__items">
          <div class="about__item">
-            <picture class="about__img"></picture>
+            <picture class="about__img">
+                  <picture>
+                     <source srcset="./image/about/desktop/home-pic-desktop.png" media="(min-width: 1200px)">
+                     <source srcset="./image/about/tablet/home-pic-tablet.png" media="(min-width: 768px)">
+                     <source srcset="./image/about/mobile/home-pic-mobile.png" media="(min-width: 480px)">
+                     <img src="./image/about/desktop/home-pic-desktop.png" alt="photo ice-cream">
+                  </picture>
+
+
+            </picture>
          </div>
          <div class="about__item">
             <p class="about__item-text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
