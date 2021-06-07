@@ -2,6 +2,14 @@
    padding-top: 135px;
    padding-bottom: 39px;
    background-color: var( --second-background-color );
+   background-image: url(../image/about/mobile/sectionbg1.png);
+   background-position: bottom;
+   background-repeat: no-repeat;
+
+   background-size: cover;
+   @media screen and( min-width: 768px){
+      background-image: url(../image/about/desktop/sectionbg1.png);
+   }
 }
 .container {
 }
@@ -34,10 +42,7 @@
     }
 }
 .about__item-bgr{
-   // background-image: url(../../image/about/mobile/sectionbg1.png);
-   // @media screen and( min-width: 768px){
-   //     background-image: url(../../image/about/desktop/sectionbg1.png);
-   // }
+  
 }
 .about__item {
    margin-bottom: 39px;
