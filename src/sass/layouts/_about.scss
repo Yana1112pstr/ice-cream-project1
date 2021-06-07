@@ -30,7 +30,12 @@
      display: flex;
     }
 }
-
+.about__item-bgr{
+   // background-image: url(../../image/about/mobile/sectionbg1.png);
+   // @media screen and( min-width: 768px){
+   //     background-image: url(../../image/about/desktop/sectionbg1.png);
+   // }
+}
 .about__item {
    margin-bottom: 39px;
    @media screen and( min-width: 480px) {
