@@ -22,11 +22,6 @@
 
   &__item {
     margin-right: 0;
-    // &:not(:last-child) {
-    //   @media screen and (max-width: 480px) {
-    //     margin-bottom: 38px;
-    //   }
-    // }
     @media screen and (max-width: 767px) {
       margin-left: 36px;
       max-width: 480px;
