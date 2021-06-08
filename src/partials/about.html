@@ -7,9 +7,9 @@
          <div class="about__item">
             <picture class="about__img">
                   <picture>
-                     <source srcset="./image/about/desktop/home-pic-desktop.png" media="(min-width: 1200px)">
-                     <source srcset="./image/about/tablet/home-pic-tablet.png" media="(min-width: 768px)">
-                     <source srcset="./image/about/mobile/home-pic-mobile.png" media="(min-width: 320px)">
+                     <source srcset="./image/about/desktop/home-pic-desktop.png 1x, ./image/about/desktop/home-pic-desktop2x.png 2x"  type="image/png"  media="(min-width: 1200px)">
+                     <source srcset="./image/about/tablet/home-pic-tablet.png 1x, ./image/about/tablet/home-pic-tablet2x.png 2x"  type="image/png"  media="(min-width: 768px)">
+                     <source srcset="./image/about/mobile/home-pic-mobile.png 1x, ./image/about/mobile/home-pic-mobile2x.png 2x"  type="image/png"  media="(min-width: 320px)">
                      <img src="./image/about/mobile/home-pic-mobile.png" alt="photo ice-cream">
                   </picture>
 
@@ -25,11 +25,10 @@
             
             <span>Aliquam erat volutpat. Aenean accumsan.</span></p>
             
-            <button class="about__button">Read more
-               <svg class="about__button-svg" width="4.5" height="8">
-                  <use href="">
-
-                  </use>
+            <button class="button about__button">Read more
+               <svg class="button__icon" width="5" height="8">
+                  <use href="./image/svg/sprite.svg#icon-vector1"></use>
+               </svg>
                </svg>
             </button>
 
