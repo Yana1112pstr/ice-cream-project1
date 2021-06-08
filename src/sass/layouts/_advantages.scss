@@ -4,7 +4,6 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 0;
-    // padding-bottom: 140px;
     padding-bottom: 66px;
   }
 
@@ -22,11 +21,12 @@
   }
 
   &__item {
-    &:not(:last-child) {
-      @media screen and (max-width: 480px) {
-        margin-bottom: 38px;
-      }
-    }
+    margin-right: 0;
+    // &:not(:last-child) {
+    //   @media screen and (max-width: 480px) {
+    //     margin-bottom: 38px;
+    //   }
+    // }
     @media screen and (max-width: 767px) {
       margin-left: 36px;
       max-width: 480px;
@@ -45,9 +45,43 @@
       margin-bottom: 0;
       margin-top: 0;
     }
+
+    &::before {
+      display: block;
+      margin-bottom: 16px;
+      content: '';
+      height: 50px;
+
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__icon-first::before {
+    background-image: url(../image/advantages/mobile/icon1.png);
+
+    @media screen and (max-width: 767px) {
+      margin-top: 38px;
+    }
+  }
+
+  &__icon-second::before {
+    background-image: url(../image/advantages/mobile/icon2.png);
+
+    @media screen and (max-width: 767px) {
+      margin-top: 38px;
+    }
+  }
+
+  &__icon-third::before {
+    background-image: url(../image/advantages/mobile/icon3.png);
+
+    @media screen and (max-width: 767px) {
+      margin-top: 38px;
+    }
   }
 
   &__title {
+    display: flex;
     margin-top: 0;
     margin-bottom: 14px;
     font-size: 36px;
