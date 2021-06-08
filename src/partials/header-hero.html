@@ -1,6 +1,91 @@
-<h1> Hello, team!</h1>
-<ul>
-    <li>Main</li>
-    <li>About</li>
-    <li>Work</li>
+<header class="header section header__section" id="header">
+  <section class="container header__container">
+  <nav class="header__nav">
+      <div class="header__logo--wrapper">
+    <a class="header__logo" href="#header"><img class="header__logo--icon" src="./image/heroheader/mobile/logo1.png" alt="company logo ice cream"></a>
+  </div>
+    <ul class="header__list list">
+      <li class="header__list--item"><a class="header__list--link header__list--link--current link current" href="#header">Home</a></li>
+      <li class="header__list--item"><a class="header__list--link link" href="#about">About us</a></li>
+      <li class="header__list--item"><a class="header__list--link link" href="#about">How it's made?</a></li>
+      <li class="header__list--item"><a class="header__list--link link" href="#products">Our products</a></li>
+      <li class="header__list--item"><a class="header__list--link link" href="#footer">Contacts</a></li>
+    </ul>
+  </nav>
+  <div>
+    <button type="button" class="header__button button">
+      <span class="header__button--span">Buy now<svg class="header__button-arrow" width="6" height="10">
+          <use href="./image/svg/vector1.svg"/>
+      </svg>
+      </span>
+    </button>
+</div> 
+
+  <div>
+    <button class="nav-open"><svg width="24" height="16" class="icon-burger">
+        <use href=""></use></svg></button>
+    </div>
+   
+
+<div class="menu-container" id="menu-container" data-menu>
+<button class="menu-container__button button">Buy now</button>
+
+<ul class="menu-container__list list">
+  <li class="menu-container__item"><a class="menu-container__link  menu-container__link--current link" href="">Home</a></li>
+  <li class="menu-container__item"><a class="menu-container__link link" href="">About us</a></li>
+  <li class="menu-container__item"><a class="menu-container__link link" href="">How it's made?</a></li>
+  <li class="menu-container__item"><a class="menu-container__link link" href="">Our products</a></li>
+  <li class="menu-container__item"><a class="menu-container__link link" href="">Contact</a></li>
 </ul>
+</div>
+</div>
+
+<button data-menu-button aria-expanded="false" type="button" class="menu__button" aria-controls="menu-container">
+  <svg aria-label="Переключатель мобильного меню">
+      <use class="icon-menu" width="20" height="12" href="./image/svg/burger.svg"></use>
+      <use class="icon-close" width="14" height="14" href="./image/svg/close.svg"></use>
+  </svg>
+</button>
+</section>
+</header>
+
+
+
+
+<section class="section hero__section">
+<div class="container hero__container">
+
+<div class="hero__wrapper--right">
+<div class="hero__title--wrapper">
+<h1 class="hero__title">ice cream made with <span class="hero__title--accent">passion</span></h1>
+<button type="button" class="hero__title--left--btn">Products</button>
+<button type="button" class="hero__title--right--btn">How it's made?</button>
+</div>
+
+<div class="hero__text--wrapper visually-hidden">
+<p class="hero__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, eius.</p>
+<a href="" class="hero__text--button"><svg width="26" height="26" class="hero__text--icon">
+  <use href=""></use></svg></a>
+<img class="hero__text--image" src="" alt="a glass bottle with milk">
+</div>
+</div>
+
+<div class="hero__wrapper--central">
+<img class="hero__icecream" src="" alt="an ice cream cone">
+<img class="hero__ellipce" src="./image/heroheader/mobile/ellipse3.png" alt="">
+</div>
+
+<div class="hero__wrapper--left">
+<div class="hero__digits--wrapper visually-hidden">
+<p class="hero__digits--text"><span class="hero__digits--text--red">16</span> cafes</p>
+<p class="hero__digits--text"><span class="hero-header__digits--text--red">23</span> food trucks</p>
+<span class="hero__digits--circle"></span>
+<span class="hero__digits--circle"></span>
+</div>
+<div class="hero__tasty--wrapper">
+<span class="hero__tasty--span"></span>
+</div>
+</div>
+</div>
+</section>
+
