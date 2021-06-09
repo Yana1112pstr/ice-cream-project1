@@ -184,41 +184,36 @@
 .contacts__button {
   width: 100%;
   margin-top: 54px;
-  border-radius: 22px;
-  position: relative;
 
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 81px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 86px;
   }
 }
 
-.contacts__button--red {
-  width: 162px;
-  height: 44px;
-
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
-  background: var(--accent-color);
-  color: var(--alt-text-color);
-}
-
 .contacts__button--white {
-  background: var(--background-color);
-  width: 162px;
-  height: 44px;
+  color: var(--alt-title-color);
+
+  @media screen and (min-width: 768px) {
+    margin-right: 7px;
+  }
+}
+
+.contacts__button--margin {
   margin-top: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-left: 7px;
+  }
 }
 
-.contacts__icon--white {
-  position: absolute;
-  /* top: 17px;
-  right: 45px; */
-  border: 2px solid rgba(255, 255, 255, 1);
-}
-
-.contacts__icon--red {
-  border: 2px solid var(--accent-color);
+.button__icon--white {
+  fill: #ffffff;
 }
