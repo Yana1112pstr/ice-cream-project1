@@ -1,18 +1,27 @@
 .gallery {
-    height: 202px;
     background-image: linear-gradient(
-        #fff5f6 55px,
-        #ffffff 55px
-        );   
+        #fff5f6 42px,
+        #ffffff 42px
+        ); 
+        @media  screen and (min-width: 350px) {
+            background-image: linear-gradient(
+                    #fff5f6 50px,
+                    #ffffff 50px
+                    );    
+        }
+        @media  screen and (min-width: 400px) {
+            background-image: linear-gradient(
+                    #fff5f6 55px,
+                    #ffffff 55px
+                    );    
+        }
     @media  screen and (min-width: 768px) {
-        height: 384px;
         background-image: linear-gradient(
                 #fff5f6 95px,
                 #ffffff 95px
                 );    
     }
     @media  screen and (min-width: 1280px) {
-        height: 550px;
         background-image: linear-gradient(
                 #fff5f6 141px,
                 #ffffff 141px
