@@ -48,8 +48,10 @@
 .header__list--link--current {
   color: var(--accent-color);
 }
+
 .header__list--link {
   font-weight: 700;
+  // color: var(--alt-title-color);
 }
 .header__logo {
   display: block;
