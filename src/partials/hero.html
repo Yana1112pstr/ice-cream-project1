@@ -2,7 +2,7 @@
   <div class="container hero__container">
     <div class="hero__wrapper--left">
       <div class="hero__title--wrapper">
-        <h1 class="hero__title">
+        <h1 class="hero__title animate__animated animate__backInLeft">
           ice cream made with <span class="hero__title--accent">passion</span>
         </h1>
         <div class="hero__buttons">
@@ -24,9 +24,26 @@
     </div>
 
     <div class="hero__wrapper--central">
-      <img class="hero__icecream" src="./image/heroheader/mobile/slider-pic7.png" alt="an ice cream cone" />
-      <img class="hero__ellipce" src="./image/heroheader/mobile/ellipse3.png" alt="" />
-      <img class="hero__ellipce--full" src="./image/heroheader/tablet/ellipse3.png" alt="" />
+
+      <picture> 
+      <source srcset="./image/heroheader/desktop/slider-pic7.png 1x" media="(min-width:1280px)">              
+        
+      <source srcset="./image/heroheader/tablet/slider-pic7.png 1x" media="(min-width:768px)">              
+     
+      <source srcset="./image/heroheader/mobile/slider-pic7.png 1x" media="(min-width:320px)">              
+      <img class="hero__icecream animate__animated  animate__tada" src="./image/heroheader/mobile/slider-pic7.png" alt="an ice cream cone" aria-label="an ice cream cone">
+     
+    </picture>
+
+      <img class="hero__ellipse" src="./image/heroheader/mobile/ellipse3.png" alt="" />
+
+      <picture>  
+        <!-- <source srcset="./image/heroheader/desktop/ellipse3.png" media="(min-width:1280px)">               -->
+        
+        <source srcset="./image/heroheader/tablet/ellipse3.png" media="(min-width:768px)">              
+        <img class="hero__ellipse--full" src="./image/heroheader/tablet/ellipse3.png" alt="" aria-label="">
+  
+      </picture> 
     </div>
 
     <div class="hero__wrapper--right">
