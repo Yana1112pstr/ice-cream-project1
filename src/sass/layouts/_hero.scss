@@ -115,7 +115,9 @@
   }
 
   .hero__title--left--btn {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 62.4px;
     height: 24px;
     background: var(--accent-color);
@@ -137,6 +139,13 @@
         }
   }
 
+  .hero__title--left--btn:hover {
+    color: var(--second-tipe-button-hover-color);
+    background-color: var(--second-background-color);
+
+  }
+
+
   .hero__title--left--btn {
     background-color: var(--accent-color);
   }
@@ -152,7 +161,9 @@
 
 
   .hero__title--right--btn {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 82.8px;
     height: 24px;
     background: var(--background-color);
