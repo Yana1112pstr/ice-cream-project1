@@ -1,3 +1,15 @@
+.section__customer-reviews {
+  margin-bottom: 86px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 119px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 132px;
+  }
+}
+
 .customer-reviews__item {
   margin-bottom: 30px;
 
