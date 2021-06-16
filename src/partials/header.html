@@ -1,6 +1,5 @@
 <header class="header section header__section" id="header">
   <div class="container header__container">
-
     <div class="header__logo--wrapper animate__animated animate__rubberBand">
       <a class="header__logo" href="#header"
         ><img
@@ -10,10 +9,11 @@
       /></a>
     </div>
     <nav class="header__nav">
-     
       <ul class="header__list list">
         <li class="header__list--item">
-          <a class="header__list--link header__list--link--current link current" href="#header">Home</a>
+          <a class="header__list--link header__list--link--current link current" href="#header"
+            >Home</a
+          >
         </li>
         <li class="header__list--item">
           <a class="header__list--link link" href="#aboutus">About us</a>
@@ -29,48 +29,53 @@
         </li>
       </ul>
     </nav>
-   
 
-  
-      <button class="nav-open" data-menu-open>
-        <svg width="24" height="16" class="icon-burger">
-          <use href="./image/svg/sprite.svg/#icon-burger"></use>
+    <button class="nav-open" data-menu-open>
+      <svg width="24" height="16" class="icon-burger">
+        <use href="./image/svg/sprite.svg/#icon-burger"></use>
+      </svg>
+    </button>
+
+    <button type="button" class="header__button button" data-order-open>
+      <span class="header__button--span">Buy now </span
+      ><img src="./image/svg/vector1.svg" class="header__button-arrow" width="6" height="10" />
+    </button>
+
+    <div class="menu-container is-hidden" id="menu-container" data-menu>
+      <button
+        data-menu-close
+        aria-expanded="false"
+        type="button"
+        class="menu__button--close"
+        aria-controls="menu-container"
+      >
+        <svg aria-label="Переключатель мобильного меню" width="14" height="14">
+          <use class="icon-close" href="./image/svg/sprite.svg#icon-close"></use>
         </svg>
       </button>
 
-
-  
-      <button type="button" class="header__button button" >
-        <span class="header__button--span"
-          >Buy now
-        </span><img src="./image/svg/vector1.svg" class="header__button-arrow" width="6" height="10">
+      <button type="button" class="header__button button menu-buy__button" data-ordermobile-open>
+        <span class="header__button--span">Buy now </span
+        ><img src="./image/svg/vector1.svg" class="header__button-arrow" width="6" height="10" />
       </button>
 
-
-
-
-<div class="menu-container is-hidden" id="menu-container" data-menu>
-      
-<button data-menu-close aria-expanded="false" type="button" class="menu__button--close" aria-controls="menu-container">
-  <svg aria-label="Переключатель мобильного меню" width="14" height="14">
-           <use class="icon-close" href="./image/svg/sprite.svg#icon-close"></use>
-  </svg>
-</button>
-
-<button type="button" class="header__button button menu-buy__button">
-  <span class="header__button--span"
-    >Buy now
-  </span><img src="./image/svg/vector1.svg" class="header__button-arrow" width="6" height="10">
-</button>
-
-<ul class="menu-container__list list">
-  <li class="menu-container__item"><a class="menu-container__link  menu-container__link--current link" href="#header">Home</a></li>
-  <li class="menu-container__item"><a class="menu-container__link link" href="#aboutus">About us</a></li>
-  <li class="menu-container__item"><a class="menu-container__link link" href="#how">How it's made?</a></li>
-  <li class="menu-container__item"><a class="menu-container__link link" href="#products">Our products</a></li>
-  <li class="menu-container__item"><a class="menu-container__link link" href="#footer">Contact</a></li>
-</ul>
-</div> 
-
+      <ul class="menu-container__list list">
+        <li class="menu-container__item">
+          <a class="menu-container__link menu-container__link--current link" href="#header">Home</a>
+        </li>
+        <li class="menu-container__item">
+          <a class="menu-container__link link" href="#aboutus">About us</a>
+        </li>
+        <li class="menu-container__item">
+          <a class="menu-container__link link" href="#how">How it's made?</a>
+        </li>
+        <li class="menu-container__item">
+          <a class="menu-container__link link" href="#products">Our products</a>
+        </li>
+        <li class="menu-container__item">
+          <a class="menu-container__link link" href="#footer">Contact</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </header>
